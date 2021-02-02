@@ -5,5 +5,5 @@
 
 library(tesseract)
 path <- here::here("inputs/WechatIMG2172.png")
-text <- tesseract::ocr(path, engine = tesseract("chi_sim"))
+text <- tesseract::ocr(path, engine = tesseract("chi_sim")) # need to install tesseract_engine_internal language engine for languages other than English. 
 cat(text)
